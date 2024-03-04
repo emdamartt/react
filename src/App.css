@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+@layer components {
+    .nav-links{
+        @apply hover:font-bold hover:text-gray-400 cursor-pointer transition duration-200;
+    }
+}
