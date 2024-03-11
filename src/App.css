@@ -5,6 +5,9 @@
 
 @layer components {
     .nav-links{
-        @apply hover:font-bold hover:text-gray-400 cursor-pointer transition duration-200;
+        @apply  hover:text-gray-400 cursor-pointer transition duration-200;
+    }
+    .logo{
+        filter: invert(100%)
     }
 }
