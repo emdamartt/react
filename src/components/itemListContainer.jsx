@@ -25,19 +25,19 @@ const ItemListContainer = () => {
     //Devuelve el contenedor de las cards recorriendo el array de productos. 
         return (
             <div className="w-full p-10">
-                <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 ">
                     {products.map((product) => (
-                        <article key={product.id} className="rounded-lg shadow-md overflow-hidden">
+                        <article key={product.id} className="rounded-lg shadow-2xl overflow-hidden mt-4 ">
                             <div className="">
-                                <img src={product.images[0]} alt={product.name} className="object-contain w-80 h-48" />
-                                <div className=" text-white p-2 mt-4 border-t border-gray-400">
+                                <img src={product.images[0]} alt={product.name} className="object-contain w-80 h-48 " />
+                                <div className=" text-white mt-4 border-t border-gray-400 p-4">
                                     <h2 className=" font-bold text-lg text-black mb-2">{product.name}</h2>
                                     <p className="text-sm font-sm text-black mb-14">{product.details}</p>
                                     <p className="text-2xl font-medium text-black">ARS ${product.price}</p>
                                 </div>
                             </div>
                             <div className="p-4 flex justify-center">
-                                <button className="w-40 bg-yellow-400 hover:bg-red-600 text-black font-bold py-2 rounded focus:outline-none focus:shadow-outline">
+                                <button className="w-40 bg-yellow-400 hover:bg-red-600 hover:text-white text-black font-bold py-2 rounded focus:outline-none focus:shadow-outline">
                                     Comprar
                                 </button>
                             </div>

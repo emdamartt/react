@@ -5,12 +5,12 @@ const Header = () =>{
         <>
         <div className="w-full bg-black text-gray-200">
             <header className="flex items-center justify-between gap-5 md:gap-0 md:justify-between p-4 mx-auto max-w-7xl flex-wrap lg:flex-row">
-                <div className="flex items-center justify-center">
-                    <img src="./src/assets/img/logo.webp" alt="Logo" className="w-20 h-20 object-cover"/>
+                <div className="flex items-center justify-center cursor-pointer hover:opacity-70    ">
+                    <img src="./public/img/logo.webp" alt="Logo" className="w-20 h-20 object-cover"/>
                     <h1 className=" text-3xl -ml-3 font-saiyan text-red-600">DBZtore</h1>
                 </div>  
                 <nav>
-                    <ul className="hidden gap-10 text-2xl lg:flex track text-yellow-500">
+                    <ul className="hidden text-3xl lg:flex track text-yellow-500 space-x-14">
                         <li className="nav-links transition duration-300 font-saiyan"><a href="">Nosotros</a></li>
                         <li className="nav-links transition duration-300 font-saiyan"><a href="">Productos</a></li>
                         <li className="nav-links transition duration-300 font-saiyan"><a href="">Contacto</a></li>
@@ -24,7 +24,7 @@ const Header = () =>{
                 </div>
                 <form action="" className=" p-2 rounded-md flex items-center relative md:mx-0 md:order-3 mx-auto">
                     <input type="text" placeholder="Buscar Producto" className="placeholder:font-saiyan bg-transparent border-b py-1 focus:outline-none"/>
-                    <i className="bi bi-search text-red-600 text-2xl absolute right-4 top-1 "></i>
+                    <i className="bi bi-search cursor-pointer text-red-600 text-2xl absolute right-4 top-1 "></i>
                 </form>
             </header>
         </div>

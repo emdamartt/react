@@ -5,7 +5,7 @@ const AsyncMock = [
         price: 70000,
         stock: 10,
         details: "DRAGON STAR - SON GOKU SUPER SAIYAN 4 - DB SUPER.",
-        images: ["./src/assets/img/gokuSs4.webp", ]
+        images: ["./public/img/gokuSs4.webp", ]
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const AsyncMock = [
         price: 50000,
         stock: 8,
         details: "DRAGON STAR - SON GOKU Ss BLACK ROSE - DB SUPER ",
-        images: ["./src/assets/img/gokuRoseSaiyan.jpg"]
+        images: ["./public/img/gokuRoseSaiyan.jpg"]
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const AsyncMock = [
         price: 65000,
         stock: 12,
         details: "DRAGON STAR - PICCOLO ULTIMATE TRANSFORM - DBZ.",
-        images: ["./src/assets/img/piccolo.jpg"]
+        images: ["./public/img/piccolo.jpg"]
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const AsyncMock = [
         price: 45000,
         stock: 15,
         details: "DRAGON STAR - SON GOHAN CELL TOURNAMENT - DBZ.",
-        images: ["./src/assets/img/Gohan.webp"]
+        images: ["./public/img/Gohan.webp"]
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const AsyncMock = [
         price: 56000,
         stock: 7,
         details: "DRAGON STAR - SON GOHAN Ss2 TRANSFORM - DBZ.",
-        images: ["./src/assets/img/gohanSs2.jpg"]
+        images: ["./public/img/gohanSs2.jpg"]
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const AsyncMock = [
         price: 80000,
         stock: 10,
         details: "DRAGON STAR - SON GOKU/VEGETA - DB SUPER.",
-        images: ["./src/assets/img/gogeta.jpg"]
+        images: ["./public/img/gogeta.jpg"]
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const AsyncMock = [
         price: 36000,
         stock: 5,
         details: "DRAGON STAR - FREEZER FINAL FORM - DBZ",
-        images: ["./src/assets/img/freezer.jpg"]
+        images: ["./public/img/freezer.jpg"]
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const AsyncMock = [
         price: 57000,
         stock: 3,
         details: "DRAGON STAR - CELL FINAL FORM TOURNAMENT - DBZ",
-        images: ["./src/assets/img/cell.jpg"]
+        images: ["./public/img/cell.jpg"]
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const AsyncMock = [
         price: 28000,
         stock: 9,
         details: "DRAGON STAR - MAGIN BOO FINAL FORM - DBZ",
-        images: ["./src/assets/img/majinboo.jpg"]
+        images: ["./public/img/majinboo.jpg"]
     },
     {
         id: 10,
@@ -77,7 +77,7 @@ const AsyncMock = [
         price: 25000,
         stock: 11,
         details: "DRAGON STAR - KRILLIN CELL TOURNAMENT - DBZ",
-        images: ["./src/assets/img/krilin.jpg"]
+        images: ["./public/img/krilin.jpg"]
     },
     {
         id: 11,
@@ -85,7 +85,7 @@ const AsyncMock = [
         price: 125000,
         stock: 13,
         details: "DRAGON STAR - BILLS LORD OF DESTRUCTION - DBZ",
-        images: ["./src/assets/img/beerus.jpg"]
+        images: ["./public/img/beerus.jpg"]
     },
     {
         id: 12,
@@ -93,7 +93,7 @@ const AsyncMock = [
         price: 49000,
         stock: 14,
         details: "DRAGON STAR - FREEZER FINAL FORM - DB SUPER",
-        images: ["./src/assets/img/freezergold.jpg"]
+        images: ["./public/img/freezergold.jpg"]
     },
     {
         id: 13,
@@ -101,7 +101,7 @@ const AsyncMock = [
         price: 33000,
         stock: 16,
         details: "DRAGON STAR - MUTEN ROSHI FINAL FORM - DBZ",
-        images: ["./src/assets/img/mutenroshi.jpg"]
+        images: ["./public/img/mutenroshi.jpg"]
     },
     {
         id: 14,
@@ -109,7 +109,7 @@ const AsyncMock = [
         price: 68000,
         stock: 6,
         details: "DRAGON STAR - VEGETA SAIYAN FIRST FORM - DBZ",
-        images: ["./src/assets/img/vegetasaiyan.jpg"]
+        images: ["./public/img/vegetasaiyan.jpg"]
     },
     {
         id: 15,
@@ -117,7 +117,7 @@ const AsyncMock = [
         price: 70000,
         stock: 6,
         details: "DRAGON STAR - ANDROID 17 CELL SAGA . DBZ",
-        images: ["./src/assets/img/androide17.jpg"]
+        images: ["./public/img/androide17.jpg"]
     },
     {
         id: 16,
@@ -125,7 +125,7 @@ const AsyncMock = [
         price: 22000,
         stock: 6,
         details: "DRAGON STAR - JIREN HEROES BATTLE - DB SUPER",
-        images: ["./src/assets/img/jiren.jpg"]
+        images: ["./public/img/jiren.jpg"]
         },
         {
         id: 17,
@@ -133,7 +133,7 @@ const AsyncMock = [
         price: 44000,
         stock: 8,
         details: "DRAGON STAR - RADITZ GOKU'S FATHER - DBZ",
-        images: ["./src/assets/img/raditz.jpg"]
+        images: ["./public/img//raditz.jpg"]
     },
     {
         id: 18,
@@ -141,7 +141,7 @@ const AsyncMock = [
         price: 33000,
         stock: 8,
         details: "DRAGON STAR - NAPPA VEGETA'S SOLDIER- DBZ",
-        images: ["./src/assets/img/nappa.jpg"]
+        images: ["./public/img/nappa.jpg"]
     },
     {
         id: 19,
@@ -149,7 +149,7 @@ const AsyncMock = [
         price: 42000,
         stock: 4,
         details: "DRAGON STAR - SON GOTEN/TRUNKS - MAJIN BOO SAGA - DBZ",
-        images: ["./src/assets/img/gotenks.jpg"]
+        images: ["./public/img/gotenks.jpg"]
     },
     {
         id: 20,
@@ -157,7 +157,7 @@ const AsyncMock = [
         price: 54000,
         stock: 10,
         details: "DRAGON  STAR - BROLY SAIYAN - DBZ MOVIES ",
-        images: ["./src/assets/img/broly.jpg"]
+        images: ["./public/img/broly.jpg"]
     },
     {
         id: 21,
@@ -165,7 +165,7 @@ const AsyncMock = [
         price: 32000,
         stock: 6,
         details: "DRAGON  STAR - JANEMBA CREATED FOR SOUL MACHINE - DBZ",
-        images: ["./src/assets/img/Janemba.jpg"]
+        images: ["./public/img/Janemba.jpg"]
     },
     {
         id: 22,
@@ -173,7 +173,7 @@ const AsyncMock = [
         price: 92000,
         stock: 6,
         details: "DRAGON  STAR - VEGETA SUPER SAIYAN IV - DBGT ",
-        images: ["./src/assets/img/vegetacola.jpg"]
+        images: ["./public/img/vegetacola.jpg"]
         },
         {
         id: 23,
@@ -181,7 +181,7 @@ const AsyncMock = [
         price: 80000,
         stock: 8,
         details: "DRAGON  STAR - SON GOHAN BEAST TRANSFORM - DB SUPER",
-        images: ["./src/assets/img/songohanbest.jpg"]
+        images: ["./public/img/songohanbest.jpg"]
     },
     {
         id: 24,
@@ -189,7 +189,7 @@ const AsyncMock = [
         price: 67000,
         stock: 8,
         details: "DRAGON  STAR - VEGITO GOKU/VEGETA TRANSFORM - MAJIN BOO SAGA - DBZ ",
-        images: ["./src/assets/img/vegito.jpg"]
+        images: ["./public/img/vegito.jpg"]
     },
     {
         id: 25,
@@ -197,7 +197,7 @@ const AsyncMock = [
         price: 45000,
         stock: 4,
         details: "DRAGON  STAR - BARDOCK SUPER SAIYAN - DB SUPER",
-        images: ["./src/assets/img/bardockss.jpg"]
+        images: ["./public/img/bardockss.jpg"]
     },
     {
         id: 26,
@@ -205,7 +205,7 @@ const AsyncMock = [
         price: 44000,
         stock: 10,
         details: "DRAGON  STAR - CABBA SUPER SAIYAN II - DB SUPER",
-        images: ["./src/assets/img/cabba.jpg"]
+        images: ["./public/img/cabba.jpg"]
     },
     {
         id: 27,
@@ -213,7 +213,7 @@ const AsyncMock = [
         price: 25000,
         stock: 10,
         details: "DRAGON  STAR - FREEZER NORMAL - FREEZER'S SAGA - DBZ",
-        images: ["./src/assets/img/freezer1st.jpg"]
+        images: ["./public/img/freezer1st.jpg"]
     },
     {
         id: 28,
@@ -221,7 +221,7 @@ const AsyncMock = [
         price: 28000,
         stock: 10,
         details: "DRAGON  STAR - ZAMASU - HEROES'S BATTEL - DB SUPER",
-        images: ["./src/assets/img/zamasu.jpg"]
+        images: ["./public/img/zamasu.jpg"]
     },
     {
         id: 29,
@@ -229,7 +229,7 @@ const AsyncMock = [
         price: 31000,
         stock: 10,
         details: "DRAGON  STAR - COOLER FREEZER'S BROTHER - DBZ",
-        images: ["./src/assets/img/cooler.jpg"]
+        images: ["./public/img/cooler.jpg"]
     },
     {
         id: 30,
@@ -237,7 +237,7 @@ const AsyncMock = [
         price: 92000,
         stock: 10,
         details: "DRAGON  STAR - GOTENKS GOHAN/TRUNKS THE GODS BATTLE - DBZ",
-        images: ["./src/assets/img/gotenksSs3.jpg"]
+        images: ["./public/img/gotenksSs3.jpg"]
     },
     {
         id: 31,
@@ -245,7 +245,7 @@ const AsyncMock = [
         price: 36000,
         stock: 10,
         details: "DRAGON  STAR - FUTURE TRUNKS - CELL TOURNAMENT - DBZ",
-        images: ["./src/assets/img/trunksFuture.jpg"]
+        images: ["./public/img/trunksFuture.jpg"]
     },
     {
         id: 32,
@@ -253,7 +253,7 @@ const AsyncMock = [
         price: 52000,
         stock: 10,
         details: "DRAGON  STAR - GOKU BLACK SAIYAN - DB SUPER",
-        images: ["./src/assets/img/gokublack.jpg"]
+        images: ["./public/img/gokublack.jpg"]
     }
 ];
 
