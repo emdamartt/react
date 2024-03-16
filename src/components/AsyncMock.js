@@ -177,10 +177,10 @@ const AsyncMock = [
         },
         {
         id: 23,
-        name: "Son Gohan Best",
+        name: "Son Gohan Beast",
         price: 80000,
         stock: 8,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - SON GOHAN BEAST TRANSFORM - DB SUPER",
         images: ["./src/assets/img/songohanbest.jpg"]
     },
     {
@@ -188,7 +188,7 @@ const AsyncMock = [
         name: "Vegito",
         price: 67000,
         stock: 8,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - VEGITO GOKU/VEGETA TRANSFORM - MAJIN BOO SAGA - DBZ ",
         images: ["./src/assets/img/vegito.jpg"]
     },
     {
@@ -196,7 +196,7 @@ const AsyncMock = [
         name: "Bardock Ss",
         price: 45000,
         stock: 4,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - BARDOCK SUPER SAIYAN - DB SUPER",
         images: ["./src/assets/img/bardockss.jpg"]
     },
     {
@@ -204,7 +204,7 @@ const AsyncMock = [
         name: "Cabba",
         price: 44000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - CABBA SUPER SAIYAN II - DB SUPER",
         images: ["./src/assets/img/cabba.jpg"]
     },
     {
@@ -212,7 +212,7 @@ const AsyncMock = [
         name: "Freezer 1st Transform",
         price: 25000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - FREEZER NORMAL - FREEZER'S SAGA - DBZ",
         images: ["./src/assets/img/freezer1st.jpg"]
     },
     {
@@ -220,7 +220,7 @@ const AsyncMock = [
         name: "Zamasu",
         price: 28000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - ZAMASU - HEROES'S BATTEL - DB SUPER",
         images: ["./src/assets/img/zamasu.jpg"]
     },
     {
@@ -228,7 +228,7 @@ const AsyncMock = [
         name: "Cooler",
         price: 31000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - COOLER FREEZER'S BROTHER - DBZ",
         images: ["./src/assets/img/cooler.jpg"]
     },
     {
@@ -236,7 +236,7 @@ const AsyncMock = [
         name: "Gotenks Ssj 3",
         price: 92000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - GOTENKS GOHAN/TRUNKS THE GODS BATTLE - DBZ",
         images: ["./src/assets/img/gotenksSs3.jpg"]
     },
     {
@@ -244,7 +244,7 @@ const AsyncMock = [
         name: "Future Trunks",
         price: 36000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - FUTURE TRUNKS - CELL TOURNAMENT - DBZ",
         images: ["./src/assets/img/trunksFuture.jpg"]
     },
     {
@@ -252,7 +252,7 @@ const AsyncMock = [
         name: "Goku Black",
         price: 52000,
         stock: 10,
-        details: "DRAGON  STAR - ",
+        details: "DRAGON  STAR - GOKU BLACK SAIYAN - DB SUPER",
         images: ["./src/assets/img/gokublack.jpg"]
     }
 ];
