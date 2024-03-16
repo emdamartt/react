@@ -1,12 +1,12 @@
 import './App.css'
-import Header from '../src/assets/components/Header'
-import Main from './assets/components/MainIndex'
+import Header from './components/Header'
+import MainIndex from './components/MainIndex'
 
 function App() {
   return (
     <>
         <Header/>
-        <Main mensaje={'Bienvenidos a Peugeot Argentina'}/>
+        <MainIndex/>
     </>
   )
 }

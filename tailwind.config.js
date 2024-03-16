@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        domine: ['Domine', 'serif'],
+        saiyan: ['Saiyan', 'Sans-Serif'],
+      },
+      maxHeight: {
+        '90vh': '90vh',
       },
   },
   plugins: [],

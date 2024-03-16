@@ -1,13 +1,17 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
 
 @layer components {
     .nav-links{
-        @apply  hover:text-gray-400 cursor-pointer transition duration-200;
+        @apply  hover:text-white cursor-pointer transition duration-200;
     }
-    .logo{
-        filter: invert(100%)
-    }
+
+}
+@font-face {
+    font-family: 'saiyan';
+    src: url('../public/fonts/Saiyan-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
