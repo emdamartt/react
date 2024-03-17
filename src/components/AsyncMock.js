@@ -41,7 +41,7 @@ const AsyncMock = [
     },
     {
         id: 6,
-        name: "Gogeta Super Saiyan Blue",
+        name: "Gogeta S-Saiyan Blue ",
         price: 80000,
         stock: 10,
         details: "DRAGON STAR - SON GOKU/VEGETA - DB SUPER.",
@@ -209,7 +209,7 @@ const AsyncMock = [
     },
     {
         id: 27,
-        name: "Freezer 1st Transform",
+        name: "Freezer",
         price: 25000,
         stock: 10,
         details: "DRAGON STAR - FREEZER NORMAL - FREEZER'S SAGA - DBZ",

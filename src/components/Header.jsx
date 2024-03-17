@@ -12,7 +12,7 @@ const Header = () =>{
                 <nav>
                     <ul className="hidden text-3xl lg:flex track text-yellow-500 space-x-14">
                         <li className="nav-links transition duration-300 font-saiyan"><a href="#">Nosotros</a></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><a href="#">Productos</a></li>
+                        <li className="nav-links transition duration-300 font-saiyan"><a href="./VentanaNueva.jsx">Productos</a></li>
                         <li className="nav-links transition duration-300 font-saiyan"><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
