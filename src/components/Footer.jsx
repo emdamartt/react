@@ -33,8 +33,8 @@ const Footer = () => {
                             254 Cabildo av, Bs As, Argentina.</a>
                         </div>
                     </div>
-                    <div className="space-y-2 text-sm mt-4">
-                        <p className="text-xl tracking-wide text-red-600 font-saiyan mb-6">Social</p>
+                    <div className="space-y-2 text-sm mt-2">
+                        <p className="text-xl tracking-wide text-red-600 font-saiyan mb-8 ">Social</p>
                         <div className="flex">
                             <a href="/" className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400 p-1">
                             <svg x="0px" y="0px" height="24" viewBox="0 0 48 48">
