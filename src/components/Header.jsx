@@ -1,19 +1,21 @@
 import Cartwidget from "./Cartwidget";
-
+import { Link } from "react-router-dom";
 const Header = () =>{
     return (
         <>
         <div className="w-full bg-black text-gray-200">
             <header className="flex items-center justify-between gap-5 md:gap-0 md:justify-between p-4 mx-auto max-w-7xl flex-wrap lg:flex-row">
-                <div className="flex items-center justify-center cursor-pointer hover:opacity-70    ">
-                    <img src="./src/assets/img/logo.webp" alt="Logo" className="w-20 h-20 object-cover"/>
-                    <h1 className=" text-3xl -ml-3 font-saiyan text-red-600">DBZtore</h1>
-                </div>  
+                <Link to='/'>
+                    <div className="flex items-center justify-center cursor-pointer hover:opacity-70">
+                        <img src="../public/img/logo.webp" alt="Logo" className="w-20 h-20 object-cover"/>
+                        <h1 className=" text-3xl -ml-3 font-saiyan text-red-600">DBZtore</h1>
+                    </div>  
+                </Link>
                 <nav>
                     <ul className="hidden text-3xl lg:flex track text-yellow-500 space-x-14">
-                        <li className="nav-links transition duration-300 font-saiyan"><a href="#">Nosotros</a></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><a href="./VentanaNueva.jsx">Productos</a></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><a href="./contacto.html">Contacto</a></li>
+                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products">Productos</Link></li>
+                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/newest">Lo mas nuevo</Link></li>
+                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/discount">Ofertas</Link></li>
                     </ul>
                 </nav>
                 <div className="flex item-center gap-2 md:order-4">

@@ -2,11 +2,11 @@ const Footer = () => {
     
     return (
         <>
-            <footer className="mt-6 mb-10 mr-4 ml-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xxl md:px-24 lg:px-8 shadow-2xl">
+            <footer className=" px-4 mx-auto max-w-7xl md:px-24 lg:px-0 mt-20">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4">
                     <div className="sm:col-span-2 mt-6">
                         <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-                            <img src="./src/assets/img/corpCap.svg" alt="logo company" className="w-10" fill="none" />
+                            <img src="../public/img/corpCap.svg" alt="logo company" className="w-10" />
                         </a>
                         <div className="mt-4 mb-4 lg:max-w-sm">
                             <p className="text-sm text-gray-800">
