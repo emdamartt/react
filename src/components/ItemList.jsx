@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function ItemList({products}) {
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
@@ -12,9 +14,10 @@ export default function ItemList({products}) {
                         </div>
                     </div>
                     <div className="p-4 flex justify-center">
-                        <button className="font-saiyan w-40 bg-yellow-400 hover:bg-red-600 hover:text-white text-black py-2 rounded focus:outline-none focus:shadow-outline">
-                            Comprar
-                        </button>
+                        <Link to= {`/item/${product.id}`}>
+                            <button className="font-saiyan w-40 bg-yellow-400 hover:bg-red-600 hover:text-white text-black py-2 rounded focus:outline-none focus:shadow-outline">Comprar
+                            </button>
+                        </Link>
                     </div>
                 </article>
             ))}

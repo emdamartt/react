@@ -7,7 +7,7 @@ const AsyncMock = [
         discount: false,
         newest:false,
         details: "DRAGON STAR - SON GOKU SUPER SAIYAN 4 - DB SUPER.",
-        images: ["../public/img/gokuSs4.webp", ]
+        images: ["../public/img/gokuSs4.webp",]
     },
     {
         id: 2,
@@ -157,7 +157,7 @@ const AsyncMock = [
         discount: false,
         newest:true,
         details: "DRAGON STAR - JIREN HEROES BATTLE - DB SUPER",
-        images: ["../public/img/jiren.jpg"]
+        images: "../public/img/jiren.jpg"
         },
         {
         id: 17,
