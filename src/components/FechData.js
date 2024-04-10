@@ -16,9 +16,9 @@ export const GetItemById = (id) =>{
         if (item){
             resolve(item)
         }else{
-              reject({
-                error: "No tenemos este producto"
-              })  
+                reject({
+                    error: "No tenemos este producto"
+            })  
         }
     })
 }

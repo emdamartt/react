@@ -2,37 +2,37 @@ const AsyncMock = [
     {
         id: 1,
         name: "Gogeta Ss4",
-        price: 70000,
+        price: 500,
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - SON GOKU SUPER SAIYAN 4 - DB SUPER.",
-        images: ["../public/img/gokuSs4.webp",]
+        details: "DRAGON STAR - GOGETA SUPER SAIYAN 4 - DB SUPER.",
+        images: ["../public/img/gokuSs4.webp"]
     },
     {
         id: 2,
         name: "Goku Ss Black Rose",
-        price: 50000,
+        price: 730,
         stock: 8,
         discount: false,
         newest:true,
         details: "DRAGON STAR - SON GOKU Ss BLACK ROSE - DB SUPER ",
-        images: ["../public/img/gokuRoseSaiyan.jpg"]
+        images: ["../public/img/gokuRoseSaiyan.jpg","https://imgs.search.brave.com/xLDyTKIwSW2vMh34dk5gDPrxrEggX8Dv3DYRYgJcBHo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjE0YnRUdURzOUwu/anBn","https://imgs.search.brave.com/WoOaGiKYu4XZAVjrri6OtIDkRFZARqkPzGdULbsvWQ4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZDJk/YjA1MTQtNGNmYS00/MjNmLWFjZmItZDEy/ZGY3MWQ3YWY3LmE1/MTQ0NzI2MjBiMzcw/NDMyMmFhOGQ2NDc0/YTY1YjEwLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG"]
     },
     {
         id: 3,
         name: "Piccolo",
-        price: 65000,
+        price: 390,
         stock: 12,
         discount: false,
         newest:false,
         details: "DRAGON STAR - PICCOLO ULTIMATE TRANSFORM - DBZ.",
-        images: ["../public/img/piccolo.jpg"]
+        images: ["../public/img/piccolo.jpg",""]
     },
     {
         id: 4,
         name: "Son Gohan",
-        price: 45000,
+        price: 450,
         stock: 15,
         discount: false,
         newest:false,
@@ -42,7 +42,7 @@ const AsyncMock = [
     {
         id: 5,
         name: "Gohan Ss2",
-        price: 56000,
+        price: 520,
         stock: 7,
         discount: false,
         newest:false,
@@ -52,7 +52,7 @@ const AsyncMock = [
     {
         id: 6,
         name: "Gogeta S-Saiyan Blue ",
-        price: 80000,
+        price: 830,
         stock: 10,
         discount: false,
         newest:true,
@@ -62,7 +62,7 @@ const AsyncMock = [
     {
         id: 7,
         name: "Freezer",
-        price: 36000,
+        price: 360,
         stock: 5,
         discount: false,
         newest:false,
@@ -72,7 +72,7 @@ const AsyncMock = [
     {
         id: 8,
         name: "Cell",
-        price: 57000,
+        price: 570,
         stock: 3,
         discount: false,
         newest:false,
@@ -82,7 +82,7 @@ const AsyncMock = [
     {
         id: 9,
         name: "Majin Boo",
-        price: 28000,
+        price: 280,
         stock: 9,
         discount: false,
         newest:false,
@@ -92,7 +92,7 @@ const AsyncMock = [
     {
         id: 10,
         name: "Krilin",
-        price: 25000,
+        price: 130,
         stock: 11,
         discount: true,
         newest:false,
@@ -102,7 +102,7 @@ const AsyncMock = [
     {
         id: 11,
         name: "Beerus",
-        price: 125000,
+        price: 200,
         stock: 13,
         discount: false,
         newest:true,
@@ -112,7 +112,7 @@ const AsyncMock = [
     {
         id: 12,
         name: "Freezer Gold",
-        price: 49000,
+        price: 290,
         stock: 14,
         discount: false,
         newest:true,
@@ -122,7 +122,7 @@ const AsyncMock = [
     {
         id: 13,
         name: "Muten Roshi",
-        price: 33000,
+        price: 125,
         stock: 16,
         discount: true,
         newest:false,
@@ -132,7 +132,7 @@ const AsyncMock = [
     {
         id: 14,
         name: "Vegeta Saiyan",
-        price: 68000,
+        price: 320,
         stock: 6,
         discount: true,
         newest:false,
@@ -142,7 +142,7 @@ const AsyncMock = [
     {
         id: 15,
         name: "Androide 17",
-        price: 70000,
+        price: 245,
         stock: 6,
         discount: true,
         newest:false,
@@ -152,27 +152,27 @@ const AsyncMock = [
     {
         id: 16,
         name: "Jiren",
-        price: 22000,
+        price: 310,
         stock: 6,
         discount: false,
         newest:true,
         details: "DRAGON STAR - JIREN HEROES BATTLE - DB SUPER",
-        images: "../public/img/jiren.jpg"
+        images: ["../public/img/jiren.jpg"]
         },
         {
         id: 17,
-        name: "Raditz",
+        name: "Bardock",
         price: 44000,
         stock: 8,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - RADITZ GOKU'S FATHER - DBZ",
-        images: ["../public/img//raditz.jpg"]
+        details: "DRAGON STAR - BARDOCK GOKU'S FATHER - DBZ",
+        images: ["../public/img//bardock.jpg"]
     },
     {
         id: 18,
         name: "Nappa",
-        price: 33000,
+        price: 120,
         stock: 8,
         discount: false,
         newest:false,
@@ -182,7 +182,7 @@ const AsyncMock = [
     {
         id: 19,
         name: "Gotenks",
-        price: 42000,
+        price: 250,
         stock: 4,
         discount: false,
         newest:false,
@@ -192,7 +192,7 @@ const AsyncMock = [
     {
         id: 20,
         name: "Broly",
-        price: 54000,
+        price: 350,
         stock: 10,
         discount: false,
         newest:false,
@@ -202,7 +202,7 @@ const AsyncMock = [
     {
         id: 21,
         name: "Janemba",
-        price: 32000,
+        price: 90,
         stock: 6,
         discount: false,
         newest:false,
@@ -212,7 +212,7 @@ const AsyncMock = [
     {
         id: 22,
         name: "Vegeta Ss4",
-        price: 92000,
+        price: 830,
         stock: 6,
         discount: false,
         newest:false,
@@ -222,7 +222,7 @@ const AsyncMock = [
         {
         id: 23,
         name: "Son Gohan Beast",
-        price: 80000,
+        price: 890,
         stock: 8,
         discount: false,
         newest:false,
@@ -232,7 +232,7 @@ const AsyncMock = [
     {
         id: 24,
         name: "Vegito",
-        price: 67000,
+        price: 670,
         stock: 8,
         discount: false,
         newest:false,
@@ -242,7 +242,7 @@ const AsyncMock = [
     {
         id: 25,
         name: "Bardock Ss",
-        price: 45000,
+        price: 315,
         stock: 4,
         discount: true,
         newest:false,
@@ -252,7 +252,7 @@ const AsyncMock = [
     {
         id: 26,
         name: "Cabba",
-        price: 44000,
+        price: 440,
         stock: 10,
         discount: false,
         newest:false,
@@ -262,7 +262,7 @@ const AsyncMock = [
     {
         id: 27,
         name: "Freezer",
-        price: 25000,
+        price: 79,
         stock: 10,
         discount: true,
         newest:false,
@@ -272,7 +272,7 @@ const AsyncMock = [
     {
         id: 28,
         name: "Zamasu",
-        price: 28000,
+        price: 75,
         stock: 10,
         discount: false,
         newest:false,
@@ -282,17 +282,17 @@ const AsyncMock = [
     {
         id: 29,
         name: "Cooler",
-        price: 31000,
+        price: 45,
         stock: 10,
         discount: false,
         newest:false,
         details: "DRAGON STAR - COOLER FREEZER'S BROTHER - DBZ",
-        images: ["../public/img/cooler.jpg"]
+        images: ["../public/img/cooler.jpg", ]
     },
     {
         id: 30,
         name: "Gotenks Ssj 3",
-        price: 92000,
+        price: 340,
         stock: 10,
         discount: false,
         newest:false,
@@ -302,7 +302,7 @@ const AsyncMock = [
     {
         id: 31,
         name: "Future Trunks",
-        price: 36000,
+        price: 175,
         stock: 10,
         discount: false,
         newest:false,
@@ -312,7 +312,7 @@ const AsyncMock = [
     {
         id: 32,
         name: "Goku Black",
-        price: 52000,
+        price: 980,
         stock: 10,
         discount: false,
         newest:false,

@@ -10,7 +10,7 @@ export default function ItemList({products}) {
                         <div className=" flex flex-col justify-between text-white mt-4 border-t border-gray-400 p-4">
                             <h2 className=" font-saiyan text-3xl text-gray-700 mb-2">{product.name}</h2>
                             <p className="text-sm font-sm text-black mb-14 truncate">{product.details}</p>
-                            <p className="text-2xl font-saiyan text-black">ARS ${product.price}</p>
+                            <p className="text-2xl font-saiyan text-black">Us${product.price}</p>
                         </div>
                     </div>
                     <div className="p-4 flex justify-center">

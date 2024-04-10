@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { GetItemById } from './FechData'
 import { useParams } from 'react-router-dom'
 
@@ -13,7 +13,6 @@ export const ItemDetailContainer = () => {
             .then((resp) => setItem(resp))
     }, [id])
 
-
     return (
         <div className='mx-auto max-w-7xl bg-white py-10'>
             {item && (
@@ -23,7 +22,7 @@ export const ItemDetailContainer = () => {
                     </div>
                     <section className='flex flex-col gap-10 justify-beetwen mx-auto'>
                         <h2 className='text-center font-bold text-3xl capitalize'>{item.name}</h2>
-                        <p className='text-center font-semibold text-2xl text-red-600'>US${item.price}.00</p>
+                        <p className='text-center font-semibold text-2xl text-red-600'>US$ {item.price}.00</p>
                         <div className='flex justify-between items-center'>
                             <span className='font-semibold text-lg'>Cantidad</span>
                             <div className='space-x-3'>

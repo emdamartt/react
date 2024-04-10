@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ItemListContainer from './components/ItemListContainer'
 import { ItemDetailContainer } from './components/ItemDetailContainer'
+import Comics from './components/Comics'
 
 function App() {
   return (

@@ -2,7 +2,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className=" px-4 mx-auto max-w-7xl md:px-24 lg:px-0 mt-20">
+            <footer className=" px-4 mt-10 mx-auto max-w-7xl md:px-24 lg:px-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 px-4 xl:px-0">
                     <div className="">
                         <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
