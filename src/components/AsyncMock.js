@@ -11,13 +11,13 @@ const AsyncMock = [
     },
     {
         id: 2,
-        name: "Goku Ss Black Rose",
+        name: "Goku Ss Rose",
         price: 730,
         stock: 8,
         discount: false,
         newest:true,
         details: "DRAGON STAR - SON GOKU Ss BLACK ROSE - DB SUPER ",
-        images: ["../public/img/gokuRoseSaiyan.jpg","https://imgs.search.brave.com/xLDyTKIwSW2vMh34dk5gDPrxrEggX8Dv3DYRYgJcBHo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjE0YnRUdURzOUwu/anBn","https://imgs.search.brave.com/WoOaGiKYu4XZAVjrri6OtIDkRFZARqkPzGdULbsvWQ4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvZDJk/YjA1MTQtNGNmYS00/MjNmLWFjZmItZDEy/ZGY3MWQ3YWY3LmE1/MTQ0NzI2MjBiMzcw/NDMyMmFhOGQ2NDc0/YTY1YjEwLmpwZWc_/b2RuSGVpZ2h0PTU4/MCZvZG5XaWR0aD01/ODAmb2RuQmc9RkZG/RkZG"]
+        images: ["../public/img/gokuRoseSaiyan.jpg"]
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const AsyncMock = [
         discount: false,
         newest:false,
         details: "DRAGON STAR - PICCOLO ULTIMATE TRANSFORM - DBZ.",
-        images: ["../public/img/piccolo.jpg",""]
+        images: ["../public/img/piccolo.jpg"]
     },
     {
         id: 4,
@@ -51,7 +51,7 @@ const AsyncMock = [
     },
     {
         id: 6,
-        name: "Gogeta S-Saiyan Blue ",
+        name: "Gogeta Ss Blue ",
         price: 830,
         stock: 10,
         discount: false,

@@ -17,7 +17,6 @@ const Header = () =>{
                         <li className="nav-links transition duration-300 font-saiyan"><Link to="/products">Productos</Link></li>
                         <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/newest">Lo mas nuevo</Link></li>
                         <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/discount">Ofertas</Link></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/Akira">Akira</Link></li>
                     </ul>
                 </nav>
                 <div className="flex item-center gap-2 md:order-4">
