@@ -9,7 +9,7 @@ const FooterElements = () => {
                         <Link to="/" aria-label="Go home" title="Company" className="inline-flex items-center">
                             <img src="../public/img/corpCap.svg" alt="logo company" className="w-10" />
                         </Link>
-                        <div className="mt-4 mb-4 lg:max-w-sm">
+                        <div className="mt-4 mb-4 sm:mb lg:max-w-sm">
                             <p className="text-sm text-gray-800">
                                 Capsule Corporation es una empresa apasionada que se especializa en la venta de muñecos de anime inspirados en la icónica serie Dragon Ball.
                             </p>
@@ -56,7 +56,7 @@ const FooterElements = () => {
                         <p className="text-sm text-gray-800">Te invitamos a conocer nuestros sitios en donde podras tener contacto personalizado con nosotros.</p>
                     </div>
                 </div>
-                <div className="flex flex-col-reverse justify-between px-4 pt-5 pb-10 xl:px-0 border-t lg:flex-row">
+                <div className="flex flex-col-reverse justify-between px-4 pt-5 pb-10 xl:px-0 border-t lg:flex-row md:flex-row">
                     <p className="text-sm text-gray-600 font-saiyan">
                         © Copyright 2020 Lorem Inc. All rights reserved.
                     </p>

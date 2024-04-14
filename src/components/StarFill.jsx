@@ -4,4 +4,4 @@ const StarFill = () => {
     )
 }
 
-export default StarFill;
+export default StarFill

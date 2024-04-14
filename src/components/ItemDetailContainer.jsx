@@ -66,7 +66,7 @@ export const ItemDetailContainer = () => {
                         </div>
                         <div>
                             <span className='flex gap-2'>
-                                <img className='w-[10px]' src="/public/img/shield.svg" alt="verify" />
+                                <img className='w-[10px] h-5' src="/public/img/shield.svg" alt="verify" />
                                 <span className='text-xs text-blue-600'>Compra protegida,<span className='text-xs text-gray-500'> recibí el producto que esperabas o te devolvemos tu dinero. </span> </span>
                             </span>
                         </div>
