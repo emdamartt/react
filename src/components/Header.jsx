@@ -1,5 +1,6 @@
 import Cartwidget from "./Cartwidget";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Header = () =>{
     return (
@@ -12,13 +13,7 @@ const Header = () =>{
                         <h1 className=" text-3xl -ml-3 font-saiyan text-red-600">DBZtore</h1>
                     </div>  
                 </Link>
-                <nav>
-                    <ul className="hidden text-2xl lg:flex track text-yellow-500 space-x-14">
-                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products">Productos</Link></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/newest">Lo mas nuevo</Link></li>
-                        <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/discount">Ofertas</Link></li>
-                    </ul>
-                </nav>
+                <Navbar />
                 <div className="flex item-center gap-2 md:order-4">
                     <div >
                         <i title="Sign in" className="bi bi-person-fill cursor-pointer text-4xl text-yellow-500"></i>
