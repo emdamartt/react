@@ -2,11 +2,15 @@ import { Link } from "react-router-dom"
 import StarFill from './StarFill';
 import StarHalfFill from './StarHalfFill';
 import StarNoFill from './StarNoFill';
+import { useEffect } from "react";
 
 export default function ItemList({products}) {
+    useEffect(() => {
+        console.log(products)
+    })
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            {products.map((product) => (
+            {products.length > 0 && products.map((product) => (
                 <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 ">
                     <div className="">
                         <img src={product.images[0]} alt={product.name} className="object-contain w-80 h-48 " />
