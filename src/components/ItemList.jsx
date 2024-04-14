@@ -1,11 +1,20 @@
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom"
 import StarFill from './StarFill';
 import StarHalfFill from './StarHalfFill';
 import StarNoFill from './StarNoFill';
 import { useEffect } from "react";
 
-// asdjalksdjasd
-
+ItemList.propTypes = {
+    products: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        images: PropTypes.arrayOf(PropTypes.string).isRequired,
+        name: PropTypes.string.isRequired,
+        details: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+        // Add more PropTypes as needed for product properties
+    })).isRequired,
+};
 export default function ItemList({products}) {
     useEffect(() => {
         console.log(products)
