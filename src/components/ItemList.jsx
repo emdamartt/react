@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 
-const ItemList = ({products}) => {
+const ItemList = (products) => {
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
             {products.length > 0 && products.map((product) => (
