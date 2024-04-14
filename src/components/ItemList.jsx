@@ -1,17 +1,11 @@
 
 import { Link } from "react-router-dom";
-import StarFill from './StarFill';
-import StarHalfFill from './StarHalfFill';
-import StarNoFill from './StarNoFill';
 
 
-
-const ItemList = (products) => {
-const productos = products.products;
-
+const ItemList = ({products}) => {
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            {productos.length > 0 && productos.map((product) => (
+            {products.length > 0 && products.map((product) => (
                 <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 ">
                     <div className="">
                         <img src={product.images[0]} alt={product.name} className="object-contain w-80 h-48 " />
@@ -28,11 +22,6 @@ const productos = products.products;
                                 <span className="bg-green-400 px-2 py-0.5 ml-2 rounded-md text-xs text-white">save 20%</span>
                             </div>
                             <span className="flex items-center mt-1">
-                                <StarFill />
-                                <StarFill />
-                                <StarFill />
-                                <StarHalfFill />
-                                <StarNoFill />
                                 <span className="text-xs ml-2 text-gray-500">10k reviews</span>
                             </span>
                         </div>
