@@ -4,6 +4,8 @@ import StarHalfFill from './StarHalfFill';
 import StarNoFill from './StarNoFill';
 import { useEffect } from "react";
 
+// asdjalksdjasd
+
 export default function ItemList({products}) {
     useEffect(() => {
         console.log(products)
