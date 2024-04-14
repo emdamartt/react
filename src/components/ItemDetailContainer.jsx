@@ -38,14 +38,6 @@ export const ItemDetailContainer = () => {
                         <span className='text-gray-500 text-xs mt-1'>nuevo | +10 vendidos</span>
                         <h2 className='px-2 font-saiyan text-lg capitalize'>{item.name}</h2>
                         <h3 className='px-2 font-saiyan text-lg capitalize'>{item.details}</h3>
-                        <span className="flex items-center mt-1">
-                            <img src="./public/img/star.svg" alt="estrella" />
-                            <img src="./public/img/star.svg" alt="estrella" />
-                            <img src="./public/img/star.svg" alt="estrella" />
-                            <img src="./public/img/star-half-fill.svg" alt="estrella" />
-                            <img src="./public/img/star-no-fill.svg" alt="estrella" />
-                            <span className="text-xs ml-2 text-gray-500">10k reviews</span>
-                        </span>
                         <p className='text-start font-sm text-xl text-black'>US$ {item.price}.00</p>
                         <div className='mb-2'>
                             <span className='flex flex-col text-xs font-semibold text-green-500'>Llega gratis mañana</span>
