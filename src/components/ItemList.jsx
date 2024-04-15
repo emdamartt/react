@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"; // Se agrega useState para manejar los productos en el estado
 
-const ItemList = ( {products} ) => {
+const ItemList = ( products ) => {
     // Se utiliza useState para manejar los productos en el estado
     const [productList, setProductList] = useState([]);
 
