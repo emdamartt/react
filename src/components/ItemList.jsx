@@ -1,17 +1,24 @@
 
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react"; // Se agrega useState para manejar los productos en el estado
 
+const ItemList = ( {products} ) => {
+    // Se utiliza useState para manejar los productos en el estado
+    const [productList, setProductList] = useState([]);
 
-export default function ItemList({ products }) {
+    // Se utiliza useEffect con la dependencia de productos para ejecutarse solo cuando los productos cambien
     useEffect(() => {
-        console.log(products)
-    })
+        console.log(products);
+        // Actualiza la lista de productos cuando cambian los productos
+        setProductList(products);
+    }, [products]);
+
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            {products.length > 0 && products.map((product) => (
+            {productList.length > 0 && productList.map((product) => (
                 <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 ">
                     <div className="">
+                        {/* Corrección: Se asume que product.images es una URL de imagen correcta */}
                         <img src={product.images} alt={product.name} className="object-contain w-80 h-48 " />
                         <div className=" flex flex-col justify-between text-white mt-4 border-t border-gray-400 p-4">
                             <div className="flex items-center gap-2">
@@ -45,3 +52,5 @@ export default function ItemList({ products }) {
         </section>
     )
 }
+
+export default ItemList;
