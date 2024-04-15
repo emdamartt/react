@@ -1,20 +1,9 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react"; // Se agrega useState para manejar los productos en el estado
 
 const ItemList = ( {products} ) => {
-    // Se utiliza useState para manejar los productos en el estado
-    const [productList, setProductList] = useState([]);
-
-    // Se utiliza useEffect con la dependencia de productos para ejecutarse solo cuando los productos cambien
-    useEffect(() => {
-        console.log(products);
-        // Actualiza la lista de productos cuando cambian los productos
-        setProductList(products);
-    }, [products]);
-
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
-            {productList.length > 0 && productList.map((product) => (
+            {products.length > 0 && products.map((product) => (
                 <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 ">
                     <div className="">
                         {/* Corrección: Se asume que product.images es una URL de imagen correcta */}
@@ -26,17 +15,17 @@ const ItemList = ( {products} ) => {
                             </div>
                             <div>
                                 <h2 className=" font-saiyan text-3xl text-gray-700 mb-2">{product.name}</h2>
-                                <p className="text-sm font-semibold text-gray-700 mb-10 overflow-ellipsis overflow-hidden whitespace-nowrap">{product.details}</p>
+                                <p className="text-sm font-semibold text-gray-700 mb-4 overflow-ellipsis overflow-hidden whitespace-nowrap">{product.description}</p>
                                 <p className="text-xl font-saiyan text-black">Us${product.price}</p>
                                 <span className="text-sm line-through opacity-50 text-black">Us$400</span>
                                 <span className="bg-green-400 px-2 py-0.5 ml-2 rounded-md text-xs text-white">save 20%</span>
                             </div>
                             <span className="flex items-center mt-1">
-                                <img src="img/star.svg" alt="estrella" />
-                                <img src="img/star.svg" alt="estrella" />
-                                <img src="img/star.svg" alt="estrella" />
-                                <img src="/img/star-half-fill.svg" alt="estrella" />
-                                <img src="/img/star-no-fill.svg" alt="estrella" />
+                                <img src="../public/img/star.svg" alt="estrella" />
+                                <img src="../public/img/star.svg" alt="estrella" />
+                                <img src="../public/img/star.svg" alt="estrella" />
+                                <img src="../public/img/star-half-fill.svg" alt="estrella" />
+                                <img src="../public/img/star-no-fill.svg" alt="estrella" />
                                 <span className="text-xs ml-2 text-gray-500">10k reviews</span>
                             </span>
                         </div>

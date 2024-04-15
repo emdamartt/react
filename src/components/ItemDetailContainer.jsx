@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { GetItemById } from './FechData'
 import { useParams } from 'react-router-dom'
+import { doc , getDoc } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 
 export const ItemDetailContainer = () => {
 
@@ -9,14 +10,17 @@ export const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-        GetItemById(Number(id))
-            .then((resp) => setItem(resp))
+        const docRef = doc(db, "products", id)
+        getDoc(docRef)
+            .then((res)=>{
+                setItem({...res.data(),id:res.id})
+            })
     }, [id])
 
     return (
-        <div className='mx-auto max-w-4xl bg-white py-10'>
+        <div className='mx-auto bg-white w-full py-10'>
             {item && (
-                <section className='grid grid-cols-1 lg:grid-cols-2 ml-3 mr-4 lg:px-0'>
+                <section className='max-w-7xl grid grid-cols-1 lg:grid-cols-2 ml-3 mr-4 lg:px-0'>
                     <div className='w-100 ml-20'>
                         <img className='w-72' src={item.images} alt={item.name} />
                         <div className='border-t-2 mt-10 mr-10'>
@@ -37,7 +41,7 @@ export const ItemDetailContainer = () => {
                     <section className='w-90 flex flex-col p-6 mt-10 pl-10 ml-10 gap-6  bg-gray-50 border rounded-md'>
                         <span className='text-gray-500 text-xs mt-1'>nuevo | +10 vendidos</span>
                         <h2 className='px-2 font-saiyan text-lg capitalize'>{item.name}</h2>
-                        <h3 className='px-2 font-saiyan text-lg capitalize'>{item.details}</h3>
+                        <h3 className='px-2 font-saiyan text-lg capitalize'>{item.description}</h3>
                         <p className='text-start font-sm text-xl text-black'>US$ {item.price}.00</p>
                         <div className='mb-2'>
                             <span className='flex flex-col text-xs font-semibold text-green-500'>Llega gratis mañana</span>

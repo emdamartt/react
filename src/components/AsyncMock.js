@@ -6,7 +6,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - GOGETA SUPER SAIYAN 4 - DB SUPER.",
+        description: "DRAGON STAR - GOGETA SUPER SAIYAN 4 - DB SUPER.",
         images: "../public/img/gokuSs4.webp"
     },
     {
@@ -16,7 +16,7 @@ const AsyncMock = [
         stock: 8,
         discount: false,
         newest:true,
-        details: "DRAGON STAR - SON GOKU Ss BLACK ROSE - DB SUPER ",
+        description: "DRAGON STAR - SON GOKU Ss BLACK ROSE - DB SUPER ",
         images: "../public/img/gokuRoseSaiyan.jpg"
     },
     {
@@ -26,7 +26,7 @@ const AsyncMock = [
         stock: 12,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - PICCOLO ULTIMATE TRANSFORM - DBZ.",
+        description: "DRAGON STAR - PICCOLO ULTIMATE TRANSFORM - DBZ.",
         images: "../public/img/piccolo.jpg"
     },
     {
@@ -36,7 +36,7 @@ const AsyncMock = [
         stock: 15,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - SON GOHAN CELL TOURNAMENT - DBZ.",
+        description: "DRAGON STAR - SON GOHAN CELL TOURNAMENT - DBZ.",
         images: "../public/img/Gohan.webp"
     },
     {
@@ -46,7 +46,7 @@ const AsyncMock = [
         stock: 7,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - SON GOHAN Ss2 TRANSFORM - DBZ.",
+        description: "DRAGON STAR - SON GOHAN Ss2 TRANSFORM - DBZ.",
         images: "../public/img/gohanSs2.jpg"
     },
     {
@@ -56,7 +56,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:true,
-        details: "DRAGON STAR - SON GOKU/VEGETA - DB SUPER.",
+        description: "DRAGON STAR - SON GOKU/VEGETA - DB SUPER.",
         images: "../public/img/gogeta.jpg"
     },
     {
@@ -66,7 +66,7 @@ const AsyncMock = [
         stock: 5,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - FREEZER FINAL FORM - DBZ",
+        description: "DRAGON STAR - FREEZER FINAL FORM - DBZ",
         images: "../public/img/freezer.jpg"
     },
     {
@@ -76,7 +76,7 @@ const AsyncMock = [
         stock: 3,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - CELL FINAL FORM TOURNAMENT - DBZ",
+        description: "DRAGON STAR - CELL FINAL FORM TOURNAMENT - DBZ",
         images: "../public/img/cell.jpg"
     },
     {
@@ -86,7 +86,7 @@ const AsyncMock = [
         stock: 9,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - MAGIN BOO FINAL FORM - DBZ",
+        description: "DRAGON STAR - MAGIN BOO FINAL FORM - DBZ",
         images: "../public/img/majinboo.jpg"
     },
     {
@@ -96,7 +96,7 @@ const AsyncMock = [
         stock: 11,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - KRILLIN CELL TOURNAMENT - DBZ",
+        description: "DRAGON STAR - KRILLIN CELL TOURNAMENT - DBZ",
         images: "../public/img/krilin.jpg"
     },
     {
@@ -106,7 +106,7 @@ const AsyncMock = [
         stock: 13,
         discount: false,
         newest:true,
-        details: "DRAGON STAR - BILLS LORD OF DESTRUCTION - DBZ",
+        description: "DRAGON STAR - BILLS LORD OF DESTRUCTION - DBZ",
         images: "../public/img/beerus.jpg"
     },
     {
@@ -116,7 +116,7 @@ const AsyncMock = [
         stock: 14,
         discount: false,
         newest:true,
-        details: "DRAGON STAR - FREEZER FINAL FORM - DB SUPER",
+        description: "DRAGON STAR - FREEZER FINAL FORM - DB SUPER",
         images: "../public/img/freezergold.jpg"
     },
     {
@@ -126,7 +126,7 @@ const AsyncMock = [
         stock: 16,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - MUTEN ROSHI FINAL FORM - DBZ",
+        description: "DRAGON STAR - MUTEN ROSHI FINAL FORM - DBZ",
         images: "../public/img/mutenroshi.jpg"
     },
     {
@@ -136,7 +136,7 @@ const AsyncMock = [
         stock: 6,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - VEGETA SAIYAN FIRST FORM - DBZ",
+        description: "DRAGON STAR - VEGETA SAIYAN FIRST FORM - DBZ",
         images: "../public/img/vegetasaiyan.jpg"
     },
     {
@@ -146,7 +146,7 @@ const AsyncMock = [
         stock: 6,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - ANDROID 17 CELL SAGA . DBZ",
+        description: "DRAGON STAR - ANDROID 17 CELL SAGA . DBZ",
         images: "../public/img/androide17.jpg"
     },
     {
@@ -156,17 +156,17 @@ const AsyncMock = [
         stock: 6,
         discount: false,
         newest:true,
-        details: "DRAGON STAR - JIREN HEROES BATTLE - DB SUPER",
+        description: "DRAGON STAR - JIREN HEROES BATTLE - DB SUPER",
         images: "../public/img/jiren.jpg"
         },
         {
         id: 17,
         name: "Bardock",
-        price: 44000,
+        price: 440,
         stock: 8,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - BARDOCK GOKU'S FATHER - DBZ",
+        description: "DRAGON STAR - BARDOCK GOKU'S FATHER - DBZ",
         images: "../public/img//bardock.jpg"
     },
     {
@@ -176,7 +176,7 @@ const AsyncMock = [
         stock: 8,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - NAPPA VEGETA'S SOLDIER- DBZ",
+        description: "DRAGON STAR - NAPPA VEGETA'S SOLDIER- DBZ",
         images: "../public/img/nappa.jpg"
     },
     {
@@ -186,7 +186,7 @@ const AsyncMock = [
         stock: 4,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - SON GOTEN/TRUNKS - MAJIN BOO SAGA - DBZ",
+        description: "DRAGON STAR - SON GOTEN/TRUNKS - MAJIN BOO SAGA - DBZ",
         images: "../public/img/gotenks.jpg"
     },
     {
@@ -196,7 +196,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - BROLY SAIYAN - DBZ MOVIES ",
+        description: "DRAGON STAR - BROLY SAIYAN - DBZ MOVIES ",
         images: "../public/img/broly.jpg"
     },
     {
@@ -206,7 +206,7 @@ const AsyncMock = [
         stock: 6,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - JANEMBA CREATED FOR SOUL MACHINE - DBZ",
+        description: "DRAGON STAR - JANEMBA CREATED FOR SOUL MACHINE - DBZ",
         images: "../public/img/Janemba.jpg"
     },
     {
@@ -216,7 +216,7 @@ const AsyncMock = [
         stock: 6,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - VEGETA SUPER SAIYAN IV - DBGT ",
+        description: "DRAGON STAR - VEGETA SUPER SAIYAN IV - DBGT ",
         images: "../public/img/vegetacola.jpg"
         },
         {
@@ -226,7 +226,7 @@ const AsyncMock = [
         stock: 8,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - SON GOHAN BEAST TRANSFORM - DB SUPER",
+        description: "DRAGON STAR - SON GOHAN BEAST TRANSFORM - DB SUPER",
         images: "../public/img/songohanbest.jpg"
     },
     {
@@ -236,7 +236,7 @@ const AsyncMock = [
         stock: 8,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - VEGITO GOKU/VEGETA TRANSFORM - MAJIN BOO SAGA - DBZ ",
+        description: "DRAGON STAR - VEGITO GOKU/VEGETA TRANSFORM - MAJIN BOO SAGA - DBZ ",
         images: "../public/img/vegito.jpg"
     },
     {
@@ -246,7 +246,7 @@ const AsyncMock = [
         stock: 4,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - BARDOCK SUPER SAIYAN - DB SUPER",
+        description: "DRAGON STAR - BARDOCK SUPER SAIYAN - DB SUPER",
         images: "../public/img/bardockss.jpg"
     },
     {
@@ -256,7 +256,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - CABBA SUPER SAIYAN II - DB SUPER",
+        description: "DRAGON STAR - CABBA SUPER SAIYAN II - DB SUPER",
         images: "../public/img/cabba.jpg"
     },
     {
@@ -266,7 +266,7 @@ const AsyncMock = [
         stock: 10,
         discount: true,
         newest:false,
-        details: "DRAGON STAR - FREEZER NORMAL - FREEZER'S SAGA - DBZ",
+        description: "DRAGON STAR - FREEZER NORMAL - FREEZER'S SAGA - DBZ",
         images: "../public/img/freezer1st.jpg"
     },
     {
@@ -276,7 +276,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - ZAMASU - HEROES'S BATTEL - DB SUPER",
+        description: "DRAGON STAR - ZAMASU - HEROES'S BATTEL - DB SUPER",
         images: "../public/img/zamasu.jpg"
     },
     {
@@ -286,7 +286,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - COOLER FREEZER'S BROTHER - DBZ",
+        description: "DRAGON STAR - COOLER FREEZER'S BROTHER - DBZ",
         images: "../public/img/cooler.jpg", 
     },
     {
@@ -296,7 +296,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - GOTENKS - THE GODS BATTLE - DBZ",
+        description: "DRAGON STAR - GOTENKS - THE GODS BATTLE - DBZ",
         images: "../public/img/gotenksSs3.jpg"
     },
     {
@@ -306,7 +306,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - FUTURE TRUNKS - CELL TOURNAMENT - DBZ",
+        description: "DRAGON STAR - FUTURE TRUNKS - CELL TOURNAMENT - DBZ",
         images: "../public/img/trunksFuture.jpg"
     },
     {
@@ -316,7 +316,7 @@ const AsyncMock = [
         stock: 10,
         discount: false,
         newest:false,
-        details: "DRAGON STAR - GOKU BLACK SAIYAN - DB SUPER",
+        description: "DRAGON STAR - GOKU BLACK SAIYAN - DB SUPER",
         images: "../public/img/gokublack.jpg"
     }
 ];

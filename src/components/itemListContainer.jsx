@@ -1,7 +1,8 @@
-import AsyncMock from "./AsyncMock";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
+import {collection , getDocs} from "firebase/firestore"
+import { db } from "../../firebase/config";
 
 
 //Devuelve el contenedor de todos los items. 
@@ -13,29 +14,27 @@ const ItemListContainer = () => {
     //Sirve para tomar lo que ponga como categoria al producto (FILTRAR).
     const category = useParams().category;
         
-    //Obtiene los productos, devuelve una promesa una vez resuelta la misma. 
-    const getProducts = () => {
-        return new Promise((resolve, reject) => {
-            resolve(AsyncMock);
-            reject(console.log(reject));
-        });
-    }
     //Antes de cargar la pagina obtiene los productos y los setea dentro de products, utilizando el useState. 
     useEffect(() => {
-        getProducts()
-        .then((resp) => {
-            if(category){
-                category === "newest" && setProducts(resp.filter((product)=>product.newest));
-                category === "discount" && setProducts(resp.filter((product)=>product.discount));
-            }else{
-                setProducts(resp); 
-            }
-        })
+        const productosRef = collection (db, "products");
+        getDocs(productosRef)
+            .then((res) => {
+                const prods = res.docs.map((doc) => {
+                    return {...doc.data(),id:doc.id}
+                })
+                if(category){
+                    category === "newest" && setProducts(prods.filter((prod) => prod.newest));
+                    category === "discount" && setProducts(prods.filter((prod)=> prod.discount)) 
+                }else {
+                    setProducts(prods)
+                }
+            })
     },[category]);
+
     //Devuelve el contenedor de las cards recorriendo el array de productos. 
         return (
-            <div className="w-full p-10">
-                <ItemList products={products} />
+            <div className="w-full bg-white p-10">
+                {products.length > 0 && <ItemList products={products} />} 
             </div>
             );
         }
