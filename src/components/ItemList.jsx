@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 
 const ItemList = ( {products} ) => {
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {products.length > 0 && products.map((product) => (
-                <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 ">
-                    <div className="">
-                        {/* Corrección: Se asume que product.images es una URL de imagen correcta */}
-                        <img src={product.images} alt={product.name} className="object-contain w-80 h-48 " />
+                <article key={product.id} className="flex flex-col justify-between rounded-lg shadow-2xl overflow-hidden mt-4 hover:outline outline-gray-300 transition">
+                    <div className="flex flex-col">
+                        <div className="overflow-hidden cursor-pointer">
+                            <img src={product.images} alt={product.name} className="object-contain w-80 h-48 hover:scale-125 transition duration-1000" />
+                        </div>
                         <div className=" flex flex-col justify-between text-white mt-4 border-t border-gray-400 p-4">
                             <div className="flex items-center gap-2">
                                 <span className="px-3 py-1 rounded-full text-xs text-black bg-gray-200 mb-2">stock ready</span>
@@ -32,7 +33,7 @@ const ItemList = ( {products} ) => {
                     </div>
                     <div className="p-4 flex justify-center">
                         <Link to={`/item/${product.id}`}>
-                            <button className="font-saiyan w-40 bg-yellow-400 hover:bg-red-600 hover:text-white text-black py-2 rounded-md focus:outline-none focus:shadow-outline">Comprar</button>
+                            <button className="transition font-saiyan w-40 bg-yellow-400 hover:bg-red-600 hover:text-white text-black py-2 rounded-md focus:outline-none focus:shadow-outline">Comprar</button>
                         </Link>
                     </div>
                 </article>
