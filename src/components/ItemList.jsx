@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react"; // Se agrega useState para manejar los productos en el estado
 
-const ItemList = ( products ) => {
+const ItemList = ( {products} ) => {
     // Se utiliza useState para manejar los productos en el estado
     const [productList, setProductList] = useState([]);
 
@@ -33,11 +32,11 @@ const ItemList = ( products ) => {
                                 <span className="bg-green-400 px-2 py-0.5 ml-2 rounded-md text-xs text-white">save 20%</span>
                             </div>
                             <span className="flex items-center mt-1">
-                                <img src="/public/img/star.svg" alt="estrella" />
-                                <img src="/public/img/star.svg" alt="estrella" />
-                                <img src="/public/img/star.svg" alt="estrella" />
-                                <img src="/public/img/star-half-fill.svg" alt="estrella" />
-                                <img src="/public/img/star-no-fill.svg" alt="estrella" />
+                                <img src="img/star.svg" alt="estrella" />
+                                <img src="img/star.svg" alt="estrella" />
+                                <img src="img/star.svg" alt="estrella" />
+                                <img src="/img/star-half-fill.svg" alt="estrella" />
+                                <img src="/img/star-no-fill.svg" alt="estrella" />
                                 <span className="text-xs ml-2 text-gray-500">10k reviews</span>
                             </span>
                         </div>
