@@ -11,7 +11,7 @@ const Header = () => {
                         <Navbar />
                     </div>
                     <Link to='/'>
-                        <div className="flex -ml-10 lg:ml-0 items-center justify-center cursor-pointer hover:opacity-70">
+                        <div className="flex -mr-16 -ml-10 lg:ml-0 items-center justify-center cursor-pointer hover:opacity-70">
                             <img src="../public/img/logo.webp" alt="Logo" className="lg:w-20 lg:h-20 object-cover w-10 h-10 m" />
                             <h1 className=" text-3xl lg:-ml-3 -ml-1 font-saiyan text-red-600">DBZtore</h1>
                         </div>
