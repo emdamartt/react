@@ -38,10 +38,10 @@ export const ItemDetailContainer = () => {
                                 la que los personajes pueda movilizarse y cobrar vida.</p>
                         </div>
                     </div>
-                    <section className='w-90 flex flex-col p-6 mt-10 pl-10 ml-10 gap-6  bg-gray-50 border rounded-md'>
+                    <section className='w-90 flex flex-col p-6  pl-10 ml-10 gap-6 bg-gray-50 border rounded-md'>
                         <span className='text-gray-500 text-xs mt-1'>nuevo | +10 vendidos</span>
-                        <h2 className='px-2 font-saiyan text-lg capitalize'>{item.name}</h2>
-                        <h3 className='px-2 font-saiyan text-lg capitalize'>{item.description}</h3>
+                        <h2 className='px-2 font-saiyan text-2xl capitalize'>{item.name}</h2>
+                        <h3 className='px-2 font-saiyan text-md capitalize text-gray-700'>{item.description}</h3>
                         <p className='text-start font-sm text-xl text-black'>US$ {item.price}.00</p>
                         <div className='mb-2'>
                             <span className='flex flex-col text-xs font-semibold text-green-500'>Llega gratis mañana</span>
@@ -57,11 +57,11 @@ export const ItemDetailContainer = () => {
                                 <button className='py-1 px-2 text-sm font-semibold bg-red-500 text-white rounded hover:bg-yellow-400 transition-colors'>+</button>
                             </div>
                         </div>
-                        <div className='flex-col flex gap-2 items-center'>
+                        <div className='flex-col flex gap-2 mt-5 items-center'>
                             <button className='rounded-full bg-yellow-400 text-black text-sm font-normal font-saiyan p-1 w-60 hover:bg-red-500 hover:text-white'>Comprar ahora</button>
                             <button className='rounded-full bg-yellow-400 text-black text-sm font-normal font-saiyan p-1 w-60 hover:bg-red-500 hover:text-white'>Agregar al carrito</button>
                         </div>
-                        <div className='flex gap-1'>
+                        <div className='flex gap-1 mt-10'>
                             <span className='text-xs text-gray-500'>Vendido por </span>
                             <span className='text-xs text-gray-500 font-semibold'><a className='text-blue-600' href="https://github.com/emdamartt"> Emdmartt</a></span>
                         </div>

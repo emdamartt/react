@@ -10,7 +10,6 @@ const Navbar = () => {
 
     return (
         <div className="">
-            {/* Menú hamburguesa para pantallas pequeñas */}
             <div className="flex justify-between items-center py-4 px-1 lg:hidden">
                 <button onClick={toggleMenu} className="text-yellow-500">
                     <svg className="w-6 h-6" viewBox="0 0 24 24" stroke="currentColor">
@@ -19,7 +18,7 @@ const Navbar = () => {
                 </button>
                 <Link to="/" className="text-yellow-500 text-2xl font-saiyan"></Link>
             </div>
-            <ul className={`flex flex-col duration-500 font-semibold absolute w-full bg-black h-full top-0 left-0 max-w-md z-50 p-4 items gap-6 lg:static lg:bg-transparent lg:h-auto lg:flex-row lg:gap-5 lg:translate-x-0 transition-transform ${isOpen ? "":"-translate-x-full"}`} >
+            <ul className={`flex flex-col duration-500 font-semibold absolute w-full text-yellow-500 text-2xl bg-black h-full top-0 left-0 max-w-md z-50 p-4 items xs:text-4xl md:text-3xl lg:static lg:bg-transparent lg:h-auto lg:flex-row lg:gap-12 lg:translate-x-1 transition-transform ${isOpen ? "":"-translate-x-full"}`} >
                 <li>
                     <div className='flex justify-between items-center lg:hidden'>
                         <div className="flex lg:ml-0 items-center justify-center cursor-pointer hover:opacity-70">
@@ -29,9 +28,9 @@ const Navbar = () => {
                         <i onClick={toggleMenu} className="bi bi-x-lg text-2xl"></i>
                     </div>
                 </li>
-                <li className="nav-links transition duration-300 font-saiyan"><Link to="/products">Productos</Link></li>
-                <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/newest">Lo mas nuevo</Link></li>
-                <li className="nav-links transition duration-300 font-saiyan"><Link to="/products/discount">Ofertas</Link></li>
+                <li className="nav-links transition duration-300 font-saiyan md:text-4xl md:hover:text-white lg:text-2xl"><Link to="/products">Productos</Link></li>
+                <li className="nav-links transition duration-300 font-saiyan md:text-4xl md:hover:text-white lg:text-2xl"><Link to="/products/newest">Lo mas nuevo</Link></li>
+                <li className="nav-links transition duration-300 font-saiyan md:text-4xl md:hover:text-white lg:text-2xl"><Link to="/products/discount">Ofertas</Link></li>
             </ul>
         </div>
     )

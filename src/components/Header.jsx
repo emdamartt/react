@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const Header = () => {
     return (
         <>
-            <div className="w-full bg-black text-gray-200">
+            <div className="w-full bg-black ">
                 <header className="flex items-center justify-between gap-5 md:gap-0 md:justify-between p-4 mx-auto max-w-7xl flex-wrap lg:flex-row">
                     <div className="lg:order-2">
                         <Navbar />
@@ -16,8 +16,7 @@ const Header = () => {
                             <h1 className=" text-3xl lg:-ml-3 -ml-1 font-saiyan text-red-600">DBZtore</h1>
                         </div>
                     </Link>
-
-                    <div className="flex item-center gap-2 md:order-4">
+                    <div className="flex item-center gap-4 md:order-4">
                         <div >
                             <i title="Sign in" className="bi bi-person-fill cursor-pointer text-4xl text-yellow-500"></i>
                         </div>
