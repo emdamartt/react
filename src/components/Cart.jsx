@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-    const { cart, setCart, finalPrice, setFinalPrice } = useContext(CartContext);
+    const { cart, setCart, precioFinal, setPrecioFinal } = useContext(CartContext);
 
     // const handleAdd = (productId, productPrice) => {
     //     const updatedCart = cart.map((product) =>
@@ -33,8 +33,8 @@ export const Cart = () => {
 
         // Restar el precio del producto eliminado del precio final
         const product = cart.find((product) => product.id === productId);
-        const newFinalPrice = finalPrice - productPrice * product.stockInCart;
-        setFinalPrice(newFinalPrice);
+        const newFinalPrice = precioFinal - productPrice * product.stockInCart;
+        setPrecioFinal(newFinalPrice);
     };
 
     return (
@@ -83,7 +83,7 @@ export const Cart = () => {
                                     <p>Precio Final</p>
                                 </th>
                                 <th>
-                                    <p>${finalPrice}</p>
+                                    <p>${precioFinal}</p>
                                 </th>
                                 <th></th>
                                 <th></th>
