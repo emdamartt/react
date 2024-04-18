@@ -100,19 +100,19 @@ const Checkout = () => {
           <form className=' border-2 rounded p-4' onSubmit={handleSubmit}>
             {error && <div className="text-red-500 mb-4">{error}</div>}
             <div className="grid grid-cols-2 gap-4">
-              <div>
+              <div className='space-x-2'>
                 <label htmlFor="nombreCompleto">Nombre Completo:</label>
                 <input className='border rounded p-2' type="text" id="nombreCompleto" name="nombreCompleto" value={formData.nombreCompleto} onChange={handleChange} />
               </div>
-              <div>
+              <div className='space-x-2'>
                 <label htmlFor="email">Email:</label>
                 <input className='border rounded p-2' type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
               </div>
-              <div>
+              <div className='space-x-2'>
                 <label htmlFor="telefono">Teléfono:</label>
                 <input className='border rounded p-2' type="tel" id="telefono" name="telefono" value={formData.telefono} onChange={handleChange} />
               </div>
-              <div>
+              <div className='space-x-2'>
                 <label htmlFor="formaDePago">Forma de Pago:</label>
                 <select id="formaDePago" name="formaDePago" value={formData.formaDePago} onChange={handleChange}>
                   <option value="">Selecciona una opción</option>
@@ -124,7 +124,7 @@ const Checkout = () => {
             </div>
             <button type="submit" className="bg-red-500 px-4 py-2 mt-6 text-white rounded hover:opacity-75 transition-colors">Enviar Pedido</button>
           </form>
-          <div className="pt-8">
+          <div className="p-4">
             <Link to="/cart">
               <button className="bg-red-500 px-4 py-2 text-white rounded hover:opacity-75 transition-colors">Volver al Carrito</button>
             </Link>

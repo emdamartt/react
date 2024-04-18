@@ -4,39 +4,14 @@ import { Link } from "react-router-dom";
 
 export const Cart = () => {
     const { cart, setCart, precioFinal, setPrecioFinal } = useContext(CartContext);
-
-    // const handleAdd = (productId, productPrice) => {
-    //     const updatedCart = cart.map((product) =>
-    //         product.id === productId ? { ...product, stockInCart: product.stockInCart + 1 } : product
-    //     );
-    //     setCart(updatedCart);
-    //     const newFinalPrice = finalPrice + productPrice;
-    //     setFinalPrice(newFinalPrice);
-    // };
-
-    // const handleRest = (productId, productPrice) => {
-    //     const updatedCart = cart.map((product) =>
-    //         product.id === productId && product.stock > 1 ? { ...product, stock: product.stock - 1 } : product
-    //     );
-    //     setCart(updatedCart);
-
-    //     // Si el stock es mayor que 1, actualizar el precio final
-    //     if (updatedCart.find((product) => product.id === productId).stockInCart > 1) {
-    //         const newFinalPrice = finalPrice - productPrice;
-    //         setFinalPrice(newFinalPrice);
-    //     }
-    // };
-
     const handleRemove = (productId, productPrice) => {
         const updatedCart = cart.filter((product) => product.id !== productId);
         setCart(updatedCart);
-
         // Restar el precio del producto eliminado del precio final
         const product = cart.find((product) => product.id === productId);
         const newFinalPrice = precioFinal - productPrice * product.stockInCart;
         setPrecioFinal(newFinalPrice);
     };
-
     return (
         <>
             {cart.length > 0 ? (
@@ -54,7 +29,7 @@ export const Cart = () => {
                             {cart.map((prod) => {
                                 return (
                                     <tr key={prod.id} className="grid items-center grid-cols-4 border-t">
-                                        <th className="col-span-2 flex items-center gap-6">
+                                        <th className="col-span-2 flex items-center gap-12">
                                             <div className="h-32 w-32">
                                                 <img className="w-full h-full object-cover" src={prod.images} alt={prod.name} />
                                             </div>
@@ -62,13 +37,7 @@ export const Cart = () => {
                                         </th>
                                         <th className="mx-auto">
                                             <div className="flex items-center gap-4 mx-auto">
-                                                {/* <span onClick={() => handleRest(prod.id, prod.price)} className="w-6 h-8 rounded bg-red-500 text-white text-xl cursor-pointer">
-                                                    -
-                                                </span> */}
                                                 <span>{prod.stockInCart}</span>
-                                                {/* <span onClick={() => handleAdd(prod.id, prod.price)} className="w-6 h-8 rounded bg-red-500 text-white text-xl cursor-pointer">
-                                                    +
-                                                </span> */}
                                             </div>
                                         </th>
                                         <th className="flex gap-4 mx-auto">
