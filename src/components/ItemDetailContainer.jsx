@@ -1,14 +1,50 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { doc , getDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
+import { CartContext } from './CartContext';
+
 
 export const ItemDetailContainer = () => {
 
+    const {cart, setCart, precioFinal, setPrecioFinal} = useContext (CartContext)
+    const [carga, setCarga] = useState(1)
     const [item, setItem] = useState(null)
     const { id } = useParams()
 
+    const handleClickAddCart = () => {
+        const existingCartItem = cart.find((prod) => prod.id === item.id);
+        const precioStock = carga * item.price; // Calcula el precio total del stock agregado al carrito
+        if (existingCartItem) {
+            if (item.stock >= carga + existingCartItem.stockInCart) {
+                // Si hay suficiente stock disponible, actualizamos el carrito y el precio final
+                const updatedCart = cart.map((prod) => {
+                    if (prod.id === item.id) {
+                        return {...prod, stockInCart: prod.stockInCart + carga};
+                    }
+                    return prod;
+                });
+                setCart(updatedCart);
+                setPrecioFinal(precioFinal + precioStock); // Actualiza el precio final con el nuevo stock
+            } else {
+                console.log("No hay suficiente stock disponible");
+            }
+        } else {
+            setCart([...cart, {...item, stockInCart: carga}]);
+            setPrecioFinal(precioFinal + precioStock); // Actualiza el precio final con el nuevo stock
+        }
+    }
+    
 
+    const handleCargaSumar = () => {
+            carga < item.stock && setCarga(carga + 1)
+            console.log(carga)
+    }
+
+    const handleCargaRestar = () => {
+        carga > 1 && setCarga(carga - 1)
+
+    }
     useEffect(() => {
         const docRef = doc(db, "products", id)
         getDoc(docRef)
@@ -16,6 +52,11 @@ export const ItemDetailContainer = () => {
                 setItem({...res.data(),id:res.id})
             })
     }, [id])
+    useEffect(() => {
+        console.log(cart)
+        console.log(carga)
+        console.log(precioFinal)
+    },[cart])
 
     return (
         <div className='mx-auto bg-white w-full py-10'>
@@ -52,14 +93,13 @@ export const ItemDetailContainer = () => {
                         <div className='flex justify-between items-center'>
                             <span className='text-xs text-gray-500'>Cantidad: <span className='font-semibold text-xs text-gray-700'>1 unidad</span></span>
                             <div className='space-x-3'>
-                                <button className='py-1 px-2 text-sm font-semibold bg-red-500 text-white rounded hover:bg-yellow-400 transition-colors'>-</button>
-                                <span className='font-semibold text-sm'>1</span>
-                                <button className='py-1 px-2 text-sm font-semibold bg-red-500 text-white rounded hover:bg-yellow-400 transition-colors'>+</button>
+                                <button onClick={handleCargaRestar} className='w-10 h-10 text-sm font-semibold bg-red-500 text-white rounded hover:bg-yellow-400 transition-colors'>-</button>
+                                <span className='font-semibold text-lg'>{carga}</span>
+                                <button onClick={handleCargaSumar} className='w-10 h-10 text-sm font-semibold bg-red-500 text-white rounded hover:bg-yellow-400 transition-colors'>+</button>
                             </div>
                         </div>
                         <div className='flex-col flex gap-2 mt-5 items-center'>
-                            <button className='rounded-full bg-yellow-400 text-black text-sm font-normal font-saiyan p-1 w-60 hover:bg-red-500 hover:text-white'>Comprar ahora</button>
-                            <button className='rounded-full bg-yellow-400 text-black text-sm font-normal font-saiyan p-1 w-60 hover:bg-red-500 hover:text-white'>Agregar al carrito</button>
+                            <button onClick={handleClickAddCart} className='rounded-full bg-yellow-400 text-black text-sm font-normal font-saiyan p-1 w-60 hover:bg-red-500 hover:text-white'>Agregar al carrito</button>
                         </div>
                         <div className='flex gap-1 mt-10'>
                             <span className='text-xs text-gray-500'>Vendido por </span>
